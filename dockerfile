@@ -22,3 +22,4 @@ RUN touch /var/log/cron.log
 
 # Run the previously made shenannigans
 CMD /data/bootstrap.sh
+EXPOSE 8080
