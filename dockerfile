@@ -7,6 +7,6 @@ RUN pip3 install pyspeedtest
 RUN pip3 install hurry.filesize
 RUN pip3 install tweepy
 
-ADD speedtweet.py /data/speedtweet.py
+ADD src/speedtweet.py /data/speedtweet.py
 
 CMD python3 /data/speedtweet.py
