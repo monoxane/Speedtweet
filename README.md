@@ -1,8 +1,8 @@
-Docker ISP tweeter
+Docker speedtest ISP tweeter
 ==
 (Very much a work in progress right now)
 
-Automatically runs a speedtest every 30 min and if its below a set speed it will tweet your ISP with numbers 'n' stuff
+Runs a speedtest every 15 minutes and if the result is below the threshold (SPEEDTWEET_SPEED_THRESHOLD) it will trigger a tweet to the username set in SPEEDTWEET_ISP_TWITTER (probably your ISP) that looks like "Hey @ISP, Why am I only getting 15.45mbps download when I pay for 30mbps?"
 
 Install
 --
@@ -12,7 +12,7 @@ Install
 
 3. Get a twitter API key and stuff by following steps one and two of [this guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-create-a-twitter-app) and
 
-4. Run with 
+4. Run with
 ```
 docker run -it
 \ -e SPEEDTWEET_ISP_TWITTER="@<isp twitter>"
