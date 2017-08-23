@@ -1,2 +1,0 @@
-*/2 * * * * speedtest-csv --sep ';' >> /data/out/speedtest.csv 
-# An empty line is required at the end of this file for a valid cron file.
