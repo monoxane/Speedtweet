@@ -6,11 +6,8 @@ Runs a speedtest every 15 minutes and if the result is below the threshold (SPEE
 
 Install
 --
-To run from dev: Clone this repo then build the docker image with  ```sudo docker build -t speedtweet:latest .```  then continue to step 1.
-
-To run normally:
-1. Get a twitter API key and stuff by following steps one and two of [this guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-create-a-twitter-app) and
-
+1. Clone this repo then build the docker image with  ```docker build -t monoxane/speedtweet:latest .```
+3. Get a twitter API key and stuff by following steps one and two of [this guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-create-a-twitter-app) and
 2. Run with:
 ```
 docker run -it
