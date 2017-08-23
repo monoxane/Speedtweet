@@ -6,6 +6,7 @@ RUN apt-get update
 RUN apt-get install python3 python3-pip netcat -y
 RUN pip3 install pyspeedtest
 RUN pip3 install hurry.filesize
+RUN pip3 install tweepy
 
 # Do some witchcraft to make things not break
 RUN mkdir /data
