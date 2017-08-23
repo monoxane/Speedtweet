@@ -6,10 +6,13 @@ Automatically runs a speedtest every 30 min and if its below a set speed it will
 
 Install
 --
+1. Clone this repo
 
-To run simply clone the repo then build the image with  ```sudo docker build -t speedtweet:latest .```  
+2. Build the docker image with  ```sudo docker build -t speedtweet:latest .```  
 
-and run with
+3. Get a twitter API key and stuff by following steps one and two of [this guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-create-a-twitter-app) and
+
+4. Run with 
 ```
 docker run -it
 \ -e SPEEDTWEET_ISP_TWITTER="@<isp twitter>"
