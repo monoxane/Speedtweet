@@ -6,13 +6,12 @@ Runs a speedtest every 15 minutes and if the result is below the threshold (SPEE
 
 Install
 --
-1. Clone this repo
+To run from dev: Clone this repo then build the docker image with  ```sudo docker build -t speedtweet:latest .```  then continue to step 1.
 
-2. Build the docker image with  ```sudo docker build -t speedtweet:latest .```  
+To run normally:
+1. Get a twitter API key and stuff by following steps one and two of [this guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-create-a-twitter-app) and
 
-3. Get a twitter API key and stuff by following steps one and two of [this guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-create-a-twitter-app) and
-
-4. Run with:
+2. Run with:
 ```
 docker run -it
 \ -e SPEEDTWEET_ISP_TWITTER="@<isp twitter>"
@@ -22,5 +21,5 @@ docker run -it
 \ -e SPEEDTWEET_TWITTER_ACCESS_SECRET="<twitter access token secret>"
 \ -e SPEEDTWEET_TWITTER_CONSUMER_KEY="<twitter consumer key>"
 \ -e SPEEDTWEET_TWITTER_CONSUMER_SECRET="<twitter consumer secret>"
-\ speedtest
+\ monoxane/speedtweet:latest
 ```
