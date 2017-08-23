@@ -19,4 +19,5 @@ docker run -it
 \ -e SPEEDTWEET_TWITTER_ACCESS_SECRET="<twitter access token secret>"
 \ -e SPEEDTWEET_TWITTER_CONSUMER_KEY="<twitter consumer key>"
 \ -e SPEEDTWEET_TWITTER_CONSUMER_SECRET="<twitter consumer secret>"
-\ speedtest```
+\ speedtest
+```
