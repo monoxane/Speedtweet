@@ -12,7 +12,7 @@ Install
 
 3. Get a twitter API key and stuff by following steps one and two of [this guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-create-a-twitter-app) and
 
-4. Run with
+4. Run with:
 ```
 docker run -it
 \ -e SPEEDTWEET_ISP_TWITTER="@<isp twitter>"
