@@ -25,6 +25,11 @@ while True:
     if current_speed < isp_advertised_threshold:
         tweet = ("Hey " + isp_twitter + ", Why am I only getting " + current_speed + "mbps download when I pay for " + isp_advertised + "mbps?")
         print("Speed is below threshold, tweeting: " + tweet)
-        api.update_status(status=tweet)
+        twitter_auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+        twitter_auth.set_access_token(access_token, access_token_secret)
+        api = tweepy.API(twitter_auth)
 
-    time.sleep(900)
+        api.update_status(status=tweet)
+        time.sleep(900)
+    else:
+        time.sleep(500)
