@@ -38,6 +38,6 @@ export SPEEDTWEET_TWITTER_CONSUMER_SECRET="<twitter consumer secret>"
 ## Run in the background with python3
 You probably want to run it in background, you can use `screen` or `nohup` for this  
 
-  6.1 For screen, install it with your package manager, its usually just `screen` but might be `gnuscreen` for some reason then run `screen -S speedtweet`, `python3 speedtweet.py` then hit `ctrl+a`  then `d` to detatch the screen.
+  6.1 For screen, install it with your package manager, its usually just `screen` (but might be `gnuscreen` for some reason) then run `screen -S speedtweet`, `python3 speedtweet.py` then hit `ctrl+a`  then `d` to detatch the screen.
 
   6.2 For nohup just run `nohup python speedtweet.py &`, the console output will be in nohup.out
